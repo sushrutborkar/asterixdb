@@ -414,6 +414,7 @@ public class SubstituteVariableVisitor
     @Override
     public Void visitSwitchOperator(SwitchOperator op, Pair<LogicalVariable, LogicalVariable> pair)
             throws AlgebricksException {
+        // TODO (GLENN): Implement this logic
         throw new NotImplementedException();
     }
 

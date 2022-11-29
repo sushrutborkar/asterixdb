@@ -637,6 +637,7 @@ public class LogicalOperatorPrettyPrintVisitorJson extends AbstractLogicalOperat
 
     @Override
     public Void visitSwitchOperator(SwitchOperator op, Void indent) throws AlgebricksException {
+        // TODO (GLENN): Implement this logic
         throw new NotImplementedException();
     }
 

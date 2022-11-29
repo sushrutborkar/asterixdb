@@ -487,6 +487,7 @@ public class LogicalOperatorDotVisitor implements ILogicalOperatorVisitor<String
 
     @Override
     public String visitSwitchOperator(SwitchOperator op, Boolean showDetails) throws AlgebricksException {
+        // TODO (GLENN): Implement this logic
         throw new NotImplementedException();
     }
 

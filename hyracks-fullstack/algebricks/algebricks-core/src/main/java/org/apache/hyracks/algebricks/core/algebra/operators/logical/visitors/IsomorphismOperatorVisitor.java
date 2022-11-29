@@ -312,6 +312,7 @@ public class IsomorphismOperatorVisitor implements ILogicalOperatorVisitor<Boole
 
     @Override
     public Boolean visitSwitchOperator(SwitchOperator op, ILogicalOperator arg) throws AlgebricksException {
+        // TODO (GLENN): Implement this logic
         throw new NotImplementedException();
     }
 

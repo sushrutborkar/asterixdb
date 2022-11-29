@@ -196,6 +196,7 @@ public class RequiredCapacityVisitor implements ILogicalOperatorVisitor<Void, Vo
 
     @Override
     public Void visitSwitchOperator(SwitchOperator op, Void arg) throws AlgebricksException {
+        // TODO (GLENN): Implement this logic
         throw new NotImplementedException();
     }
 

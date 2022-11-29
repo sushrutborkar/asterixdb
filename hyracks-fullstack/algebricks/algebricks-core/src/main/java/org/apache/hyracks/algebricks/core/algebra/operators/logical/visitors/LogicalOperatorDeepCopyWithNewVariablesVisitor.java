@@ -450,6 +450,7 @@ public class LogicalOperatorDeepCopyWithNewVariablesVisitor
 
     @Override
     public ILogicalOperator visitSwitchOperator(SwitchOperator op, ILogicalOperator arg) throws AlgebricksException {
+        // TODO (GLENN): Implement this logic
         throw new NotImplementedException();
     }
 

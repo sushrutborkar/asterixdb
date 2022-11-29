@@ -55,6 +55,7 @@ import org.apache.hyracks.dataflow.std.base.AbstractUnaryInputOperatorNodePushab
  */
 public class SwitchOperatorDescriptor extends AbstractReplicateOperatorDescriptor {
     private static final long serialVersionUID = 1L;
+    final static int SWITCHER_MATERIALIZER_ACTIVITY_ID = 0;
 
     private final IScalarEvaluatorFactory branchingExprEvalFactory;
     private final IBinaryIntegerInspectorFactory intInspectorFactory;
@@ -80,7 +81,7 @@ public class SwitchOperatorDescriptor extends AbstractReplicateOperatorDescripto
     @Override
     public void contributeActivities(IActivityGraphBuilder builder) {
         SwitcherMaterializerActivityNode sma =
-                new SwitcherMaterializerActivityNode(new ActivityId(odId, SPLITTER_MATERIALIZER_ACTIVITY_ID)); // change this??
+                new SwitcherMaterializerActivityNode(new ActivityId(odId, SWITCHER_MATERIALIZER_ACTIVITY_ID));
         builder.addActivity(this, sma);
         builder.addSourceEdge(0, sma, 0);
         for (int i = 0; i < outputArity; i++) {
